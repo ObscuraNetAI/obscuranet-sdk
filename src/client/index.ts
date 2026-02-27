@@ -1,2 +1,2 @@
-export * from './SerraOSClient';
-export { SerraOSClient } from './SerraOSClient';
+export * from './ObscuranetClient';
+export { ObscuranetClient } from './ObscuranetClient';

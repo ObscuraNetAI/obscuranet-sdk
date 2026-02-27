@@ -1,22 +1,22 @@
 /**
- * Base error class for SerraOS SDK errors
+ * Base error class for Obscuranet SDK errors
  */
-export class SerraOSError extends Error {
+export class ObscuranetError extends Error {
   public code: string;
   public details?: any;
 
   constructor(message: string, code: string, details?: any) {
     super(message);
-    this.name = 'SerraOSError';
+    this.name = 'ObscuranetError';
     this.code = code;
     this.details = details;
-    Object.setPrototypeOf(this, SerraOSError.prototype);
+    Object.setPrototypeOf(this, ObscuranetError.prototype);
   }
 }
 /**
  * Error thrown when validation fails
  */
-export class ValidationError extends SerraOSError {
+export class ValidationError extends ObscuranetError {
   constructor(message: string, details?: any) {
     super(message, 'VALIDATION_ERROR', details);
     this.name = 'ValidationError';
@@ -27,7 +27,7 @@ export class ValidationError extends SerraOSError {
 /**
  * Error thrown when network request fails
  */
-export class NetworkError extends SerraOSError {
+export class NetworkError extends ObscuranetError {
   constructor(message: string, details?: any) {
     super(message, 'NETWORK_ERROR', details);
     this.name = 'NetworkError';
@@ -38,7 +38,7 @@ export class NetworkError extends SerraOSError {
 /**
  * Error thrown when transaction fails
  */
-export class TransactionError extends SerraOSError {
+export class TransactionError extends ObscuranetError {
   constructor(message: string, details?: any) {
     super(message, 'TRANSACTION_ERROR', details);
     this.name = 'TransactionError';
@@ -49,7 +49,7 @@ export class TransactionError extends SerraOSError {
 /**
  * Error thrown when proof generation/verification fails
  */
-export class ProofError extends SerraOSError {
+export class ProofError extends ObscuranetError {
   constructor(message: string, details?: any) {
     super(message, 'PROOF_ERROR', details);
     this.name = 'ProofError';
@@ -60,7 +60,7 @@ export class ProofError extends SerraOSError {
 /**
  * Error thrown when swap routing fails
  */
-export class SwapError extends SerraOSError {
+export class SwapError extends ObscuranetError {
   constructor(message: string, details?: any) {
     super(message, 'SWAP_ERROR', details);
     this.name = 'SwapError';

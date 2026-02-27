@@ -1,12 +1,12 @@
 {
-  "name": "@serraos/sdk",
+  "name": "@obscuranet/sdk",
   "version": "1.0.0",
-  "description": "A comprehensive SDK for interacting with the SerraOS system",
+  "description": "A comprehensive SDK for interacting with the Obscuranet system",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SerraOS/SDK.git"
+    "url": "git+https://github.com/Obscuranet/SDK.git"
   },
   "scripts": {
     "build": "tsc",
@@ -15,13 +15,13 @@
     "prepublishOnly": "npm run build"
   },
   "keywords": [
-    "serraos",
+    "obscuranet",
     "sdk",
     "blockchain",
     "swap",
     "proof"
   ],
-  "author": "SerraOS",
+  "author": "Obscuranet",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.0",

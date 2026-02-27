@@ -1,6 +1,6 @@
-# SerraOS SDK Examples
+# Obscuranet SDK Examples
 
-This directory contains example code demonstrating how to use the SerraOS SDK.
+This directory contains example code demonstrating how to use the Obscuranet SDK.
 
 ## Running the Examples
 

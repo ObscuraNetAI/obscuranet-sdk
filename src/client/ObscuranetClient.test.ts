@@ -1,11 +1,11 @@
-import { SerraOSClient } from './SerraOSClient';
+import { ObscuranetClient } from './ObscuranetClient';
 import { ValidationError } from '../utils/errors';
 
-describe('SerraOSClient', () => {
-  let client: SerraOSClient;
+describe('ObscuranetClient', () => {
+  let client: ObscuranetClient;
 
   beforeEach(() => {
-    client = new SerraOSClient({
+    client = new ObscuranetClient({
       rpcEndpoint: 'https://api.test.com',
       network: 'testnet',
     });
@@ -20,7 +20,7 @@ describe('SerraOSClient', () => {
 
     it('should throw error with invalid config', () => {
       expect(() => {
-        new SerraOSClient({} as any);
+        new ObscuranetClient({} as any);
       }).toThrow(ValidationError);
     });
   });

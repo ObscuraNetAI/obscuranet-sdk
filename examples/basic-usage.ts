@@ -1,20 +1,20 @@
 /**
- * Basic usage examples for SerraOS SDK
+ * Basic usage examples for Obscuranet SDK
  * 
  * This file demonstrates the core functionality of the SDK
  */
 
-import { SerraOSClient } from '../src';
+import { ObscuranetClient } from '../src';
 
 async function main() {
   // Initialize the client
-  const client = new SerraOSClient({
-    rpcEndpoint: 'https://api.serraos.example.com',
+  const client = new ObscuranetClient({
+    rpcEndpoint: 'https://api.obscuranet.example.com',
     network: 'testnet',
     apiKey: 'your-api-key-here', // optional
   });
 
-  console.log('SerraOS SDK Examples\n');
+  console.log('Obscuranet SDK Examples\n');
 
   // Example 1: Get account information
   console.log('1. Fetching account information...');

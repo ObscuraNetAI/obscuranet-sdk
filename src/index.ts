@@ -1,11 +1,11 @@
 /**
- * SerraOS SDK - A comprehensive SDK for interacting with the SerraOS system
+ * Obscuranet SDK - A comprehensive SDK for interacting with the Obscuranet system
  * 
  * @packageDocumentation
  */
 
 // Main client
-export { SerraOSClient } from './client';
+export { ObscuranetClient } from './client';
 
 // Proof generation
 export { ProofGenerator } from './proof';

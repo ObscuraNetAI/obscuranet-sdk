@@ -1,12 +1,12 @@
-# SerraOS SDK
+# Obscuranet SDK
 
-The official SDK for integrating SerraOS's zero-trace, RAM-only, self-erasing execution model into your own applications.
+The official SDK for integrating Obscuranet's zero-trace, RAM-only, self-erasing execution model into your own applications.
 
 ---
 
 ## Overview
 
-The **SerraOS SDK** gives developers access to the same core systems that power SerraOS: volatile execution, memory sharding, multi-hop relay routing, and total post-operation erasure. Everything the SDK does happens inside RAM, and everything is destroyed as soon as you trigger TraceKill or the session expires.
+The **Obscuranet SDK** gives developers access to the same core systems that power Obscuranet: volatile execution, memory sharding, multi-hop relay routing, and total post-operation erasure. Everything the SDK does happens inside RAM, and everything is destroyed as soon as you trigger TraceKill or the session expires.
 
 ---
 
@@ -120,13 +120,13 @@ serra tracekill --session <id>
 - **Relay Obfuscation** – Network metadata is destroyed.
 - **Memory Wipe** – Guaranteed clean state after TraceKill.
 
-This SDK cannot prevent misuse. You are responsible for ensuring compliance with laws and platform policies when integrating SerraOS technologies.
+This SDK cannot prevent misuse. You are responsible for ensuring compliance with laws and platform policies when integrating Obscuranet technologies.
 
 ---
 
 ## Repository
 
-GitHub: https://github.com/SerraOs/SDK
+GitHub: https://github.com/obscuranet/SDK
 
 ---
 

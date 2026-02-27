@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios';
 import {
-  SerraOSConfig,
+  ObscuranetConfig,
   TransactionParams,
   TransactionResult,
   AccountInfo,
@@ -12,15 +12,15 @@ import { ProofGenerator } from '../proof';
 import { SwapRouter } from '../swap';
 
 /**
- * Main client for interacting with the SerraOS system
+ * Main client for interacting with the Obscuranet system
  */
-export class SerraOSClient {
+export class ObscuranetClient {
   private client: AxiosInstance;
-  private config: SerraOSConfig;
+  private config: ObscuranetConfig;
   public proofGenerator: ProofGenerator;
   public swapRouter: SwapRouter;
 
-  constructor(config: SerraOSConfig) {
+  constructor(config: ObscuranetConfig) {
     this.validateConfig(config);
     this.config = {
       ...config,
@@ -227,7 +227,7 @@ export class SerraOSClient {
   /**
    * Validate configuration
    */
-  private validateConfig(config: SerraOSConfig): void {
+  private validateConfig(config: ObscuranetConfig): void {
     if (!config || !config.rpcEndpoint) {
       throw new ValidationError('RPC endpoint is required');
     }

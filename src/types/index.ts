@@ -1,8 +1,8 @@
 /**
- * Configuration options for the SerraOS SDK client
+ * Configuration options for the Obscuranet SDK client
  */
-export interface SerraOSConfig {
-  /** The RPC endpoint URL for the SerraOS network */
+export interface ObscuranetConfig {
+  /** The RPC endpoint URL for the Obscuranet network */
   rpcEndpoint: string;
   /** Optional API key for authenticated requests */
   apiKey?: string;
